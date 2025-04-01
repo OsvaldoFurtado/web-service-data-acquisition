@@ -1,8 +1,8 @@
 """
-
-Project: A template for Data Acquisition projects
+Project: Web service Data Acquisition
 
 """
+
 from dataclasses import dataclass
 from typing import TypeAlias
 

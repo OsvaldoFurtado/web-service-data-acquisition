@@ -1,16 +1,15 @@
-# Python Projects
-# Project: A template for Data Acquisition projects
+# Project: Web service Data Acquisition
 
 [build-system]
 requires = ["setuptools", "wheel"]  # PEP 508 specifications.
 
 [project]
-name = "project_1_1"
+name = "project_1_2"
 version = "1.0.0"
 authors = [
     {name = "Author", email = "author@email.com"},
 ]
-description = "Real-World Python Projects -- Project 1.1."
+description = "Real-World Python Projects -- Project 1.2."
 readme = "README.md"
 requires-python = ">=3.11"
 classifiers = [
@@ -20,18 +19,20 @@ classifiers = [
 ]
 dependencies = [
     # Packages this project requires
+    "requests==2.28.1",
+    "beautifulsoup4==4.11.1"
 ]
 [project.optional-dependencies]
 dev = [
     # Development tools to work on this project
     "sphinx==7.2.2",
     "sphinxcontrib-plantuml==0.25",
-    "pylint==3.3.6",
     "pip-tools==7.3.0"
 ]
 test = [
     # Testing tools to test this project
     "pytest==7.4.0",
     "tox==4.9.0",
-    "behave==1.2.6"
+    "behave==1.2.6",
+    "bottle==0.12.23"
 ]
