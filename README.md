@@ -1,6 +1,6 @@
 # Web Service Data Acquisition
 
-This project is a CLI application to grab data from a a RESTful web service.
+This project is a CLI application that grab data from a a RESTful web service.
 
 
 Example of command: 
