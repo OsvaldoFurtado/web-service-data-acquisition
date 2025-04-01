@@ -1,4 +1,4 @@
-# data-acquisition-template
+# Web Service Data Acquisition
 
 This project use a CLI application to grab data from a a RESTful web service.
 
