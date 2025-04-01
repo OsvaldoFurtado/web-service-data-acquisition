@@ -1,5 +1,7 @@
 # data-acquisition-template
 
+This project use a CLI application to grab data from a a RESTful web service.
+
 Example of command: 
 
 ```cli
