@@ -2,7 +2,9 @@
 
 Example of command: 
 
+```cli
 python src/acquire.py -o quartet -k ~/Downloads/kaggle.json \ --zip carlmcbrideellis/data-anscombes-quartet
+```
 
 -o quartet : specifies a directory into which four results are written. These will have names like quartet/series_1.json.
 -k kaggle.json :  name of a file with the username and Kaggle API token.
