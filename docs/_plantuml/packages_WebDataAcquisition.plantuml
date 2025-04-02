@@ -1,0 +1,16 @@
+@startuml packages_WebDataAcquisition
+set namespaceSeparator none
+package "src" as src {
+}
+package "src.acquire" as src.acquire {
+}
+package "src.kaggle_client" as src.kaggle_client {
+}
+package "src.model" as src.model {
+}
+package "src.webpage_client" as src.webpage_client {
+}
+src.acquire --> src.kaggle_client
+src.acquire --> src.model
+src.kaggle_client --> src.model
+@enduml

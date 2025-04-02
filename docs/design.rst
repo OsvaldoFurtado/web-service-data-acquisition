@@ -1,0 +1,48 @@
+Design
+====================================================
+
+.. uml:: 
+    
+    @startuml classes_WebDataAcquisition
+    set namespaceSeparator none
+    class "DSBuilder" as src.kaggle_client.DSBuilder {
+    target_class : type[Dataset]
+    from_json(obj: dict[str, str]) -> 'Dataset'
+    }
+    class "Dataset" as src.kaggle_client.Dataset {
+    downloadCount : int
+    ref : str
+    title : str
+    totalBytes : int
+    url : str
+    usabilityRating : float
+    viewCount : int
+    voteCount : int
+    }
+    class "PairBuilder" as src.kaggle_client.PairBuilder {
+    target_class : type[RawData]
+    {abstract}from_row(row: list[str]) -> RawData
+    }
+    class "RestAccess" as src.kaggle_client.RestAccess {
+    credentials
+    logger : Logger
+    {abstract}close()
+    error_dump(prefix: str, response: requests.Response) -> None
+    get_html(url: str, params: dict[str, str] | None) -> bytes
+    get_json(url: str, params: dict[str, str] | None) -> dict[str, any]
+    get_paged_json(url: str, query: dict[str, str] | None) -> Iterator[dict[str, str]]
+    get_zip(url: str, params: dict[str, str] | None) -> zipfile.ZipFile
+    }
+    class "RestExtract" as src.kaggle_client.RestExtract {
+    builders : list[PairBuilder]
+    build_pairs(row: list[str]) -> list[RawData]
+    }
+    class "SomeOtherStructure" as src.model.SomeOtherStructure {
+    x : list[str]
+    y : list[str]
+    }
+    class "XYPair" as src.model.XYPair {
+    x : str
+    y : str
+    }
+    @enduml

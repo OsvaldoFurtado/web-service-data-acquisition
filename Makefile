@@ -16,4 +16,4 @@ docs:
 	cd docs && make html
 
 clean:
-	rm -rf .pytest_cache .mypy_cache __pycache__ .tox dist build
+	rm -rf .pytest_cache .mypy_cache __pycache__ .tox dist build src/__pycache__

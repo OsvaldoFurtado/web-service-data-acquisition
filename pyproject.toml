@@ -4,12 +4,12 @@
 requires = ["setuptools", "wheel"]  # PEP 508 specifications.
 
 [project]
-name = "project_1_2"
+name = "web_service_acquisition"
 version = "1.0.0"
 authors = [
-    {name = "Author", email = "author@email.com"},
+    {name = "Osvaldo Furtado", email = "schurings@hotmail.com"},
 ]
-description = "Real-World Python Projects -- Project 1.2."
+description = "Web service Data Acquisition"
 readme = "README.md"
 requires-python = ">=3.11"
 classifiers = [
@@ -27,6 +27,7 @@ dev = [
     # Development tools to work on this project
     "sphinx==7.2.2",
     "sphinxcontrib-plantuml==0.25",
+    "pylint==3.3.6",
     "pip-tools==7.3.0"
 ]
 test = [
