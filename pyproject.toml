@@ -37,3 +37,6 @@ test = [
     "behave==1.2.6",
     "bottle==0.12.23"
 ]
+
+[project.scripts]
+acquire-dataset = "acquire:main"
