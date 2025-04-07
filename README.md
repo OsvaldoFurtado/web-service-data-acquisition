@@ -1,7 +1,7 @@
 # Web Service Data Acquisition
 
 ## Description
-This project is a Command Line Interface (CLI) application that extracts data from RESTful web services, specifically from the Kaggle API. The application allows you to download datasets from Kaggle, such as the Anscombe's Quartet example.
+This project is a Command Line Interface (CLI) application that extracts data from RESTful web services, specifically from the Kaggle API allowing you to download datasets from Kaggle.
 
 ## Requirements
 - Python 3.11+
